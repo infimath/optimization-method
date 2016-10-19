@@ -1,0 +1,38 @@
+GLPK 4.60 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    
+Objective:  obj = 21 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 c1           NU       8.00000        .               -Inf        6.00000      -2.00000      17.00000 c3
+                                           2.00000       8.00000       11.00000          +Inf      27.00000 c5
+
+     2 c2           BS       5.00000      -4.00000       1.00000        2.00000      -1.00000      16.00000 c4
+                                            .               +Inf        5.00000          +Inf          +Inf
+
+     3 c3           BS       3.00000      -2.00000       1.00000         .           -2.00000      15.00000 c1
+                                            .               +Inf        6.00000       1.00000      24.00000 c4
+
+     4 c4           NU       5.00000        .               -Inf        2.00000      -1.00000      18.00000 c5
+                                           1.00000       5.00000        7.00000          +Inf      23.00000 c3
+
+     5 c5           BS       3.00000       3.00000          -Inf        1.00000      -2.00000      15.00000 c1
+                                            .            6.00000        7.00000       1.00000      24.00000 c4
+
+GLPK 4.60 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    
+Objective:  obj = 21 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 VAR1         BS       5.00000       3.00000        .             2.00000       2.00000      16.00000 c4
+                                            .               +Inf        5.00000          +Inf          +Inf
+
+     2 VAR2         BS       3.00000       2.00000        .             1.00000        .           15.00000 c1
+                                            .               +Inf        6.00000       3.00000      24.00000 c4
+
+End of report

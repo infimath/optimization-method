@@ -1,0 +1,35 @@
+GLPK 4.60 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    
+Objective:  obj = 51.42857143 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 c1           NS      60.00000        .           60.00000       37.50000          -Inf      33.75000 VAR1
+                                            .78571      60.00000       65.50000          +Inf      55.75000 c3
+
+     2 c2           NS     150.00000        .          150.00000      128.00000          -Inf      50.80000 c3
+                                            .02857     150.00000      240.00000          +Inf      54.00000 VAR1
+
+     3 c3           BS       6.42857       1.57143          -Inf         .            -.36364      49.09091 VAR3
+                                            .            8.00000        6.42857          +Inf          +Inf
+
+GLPK 4.60 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    
+Objective:  obj = 51.42857143 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 VAR1         BS       6.42857       5.00000        .                -Inf       4.63636      49.09091 VAR3
+                                            .               +Inf        6.42857          +Inf          +Inf
+
+     2 VAR2         BS       4.28571       4.50000        .             4.28571          -Inf          -Inf
+                                            .               +Inf        5.45455       6.50000      60.00000 VAR3
+
+     3 VAR3         NL        .            6.00000        .            -1.00000          -Inf      52.00000 c3
+                                           -.57143          +Inf        4.09091       6.57143      49.09091 VAR1
+
+End of report
